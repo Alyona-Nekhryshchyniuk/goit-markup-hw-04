@@ -109,6 +109,12 @@ header a {
   margin-left: 30px;
 }
 
+.mail-link,
+.tel-link {
+  display: inline-flex;
+  align-items: center;
+}
+
 .contact-list {
   color: var(--tertiary-color);
   margin-left: auto;
@@ -227,16 +233,14 @@ footer a:focus {
 }
 
 .pros-icon-bg {
-  padding: 25px 100px;
+  width: 270px;
+  height: 120px;
   border-radius: 4px;
   background-color: var(--secondary-background-color);
   margin-bottom: 30px;
   display: flex;
-}
-
-.pros-icon {
   align-items: center;
-  margin: auto;
+  justify-content: center;
 }
 
 /* WORKS SECTION*/
@@ -265,8 +269,7 @@ footer a:focus {
 .socials {
   display: flex;
   justify-content: center;
-  padding-top: 16px;
-  padding-bottom: 30px;
+  margin-top: 16px;
 }
 .social-link {
   display: inline-block;
@@ -289,7 +292,7 @@ footer a:focus {
   display: block;
   fill: #afb1b8;
 }
-.social-link:not(:last-child) {
+.social-item:not(:last-child):not(:last-child) {
   margin-right: 10px;
 }
 
@@ -303,6 +306,7 @@ footer a:focus {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   width: calc((100% - 90px) / 4);
+  padding-bottom: 30px;
 }
 
 .team-card img {
@@ -369,7 +373,7 @@ footer a:focus {
   color: var(--secondary-color);
 }
 
-/* portfolio BUTTONS */
+/* PORTFOLIO BUTTONS */
 
 .button-list {
   display: flex;
@@ -496,11 +500,11 @@ a[href*="maps"] {
 
 .footer-flex-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-socials {
   margin-left: 70px;
-  margin-top: 15px;
 }
 .footer-socials .social-link {
   background-color: #85868b;
